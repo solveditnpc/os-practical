@@ -53,6 +53,7 @@ void printTable(Process processes[],int n) {
         totalWaitingTime=totalWaitingTime+processes[i].waitingTime;
         totalTurnAroundTime=totalTurnAroundTime+processes[i].turnAroundTime;
         cout<<processes[i].pid<<" "<<processes[i].arrivalTime<<" "<<processes[i].burstTime<<" "<<processes[i].completionTime<<" "<<processes[i].waitingTime<<" "<<processes[i].turnAroundTime<<endl;
+        cout<<"Process "<<processes[i].pid<<" completed at time: "<<processes[i].completionTime<<endl;
     }
     cout<<"Average waiting time is : "<<(float)totalWaitingTime/(float)n<<endl;
     cout<<"Average turn around time is : "<<(float)totalTurnAroundTime/(float)n<<endl;
